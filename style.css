@@ -1,4 +1,4 @@
-ul {
+div.nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -6,11 +6,11 @@ ul {
     background-color: #333;
   }
   
-  li {
+div.nav li {
     float: left;
   }
   
-  li a {
+div.nav li a {
     display: block;
     color: white;
     text-align: center;
@@ -18,7 +18,7 @@ ul {
     text-decoration: none;
   }
   
-  li a:hover:not(.active) {
+div.nav li a:hover:not(.active) {
     background-color: #111;
   }
   
