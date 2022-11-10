@@ -20,7 +20,11 @@ div.nav li a {
   
 div.nav li a:hover:not(.active) {
     background-color: #111;
-  }h1 {color: rgb(122, 6, 6);
+  }
+  
+  h1 {
+    color: rgb(122, 6, 6);
+  }
   
   .active {
     background-color: #04AA6D;
