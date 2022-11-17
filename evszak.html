@@ -9,26 +9,22 @@
         div{
             margin: 2%;
             float: left;
-            transition: 8s;
+            transition: .8s;
             font-size: x-large;
             font-weight: bolder;
         }
         img{
-            border: 3px;
-
+            border: 3px solid black;
             width: 384px;
         }
+ div:hover {
+    transform: scale(1.1);
+ }
  </style>
 </head>
 
 <body>
-  <div>
-    <img src="img/tavasz.jpg" alt=",tavasz"> <br>
-    <img src="img/nyar.jpg" alt="nyár"> <br>
-    <img src="img/osz.jpg" alt="ősz"> <br>
-    <img src="img/tel.jpg" alt="tél"> <br>
-
-    <div class="nav">
+     <div class="nav">
         <ul>
             <li><a class="active" href="index.html">FŐOLDAL</a></li>
             <li><a href="keplink.html">KÉPLINK</a></li>
@@ -38,9 +34,22 @@
             <li><a href="evszak.html">Évszakok</a></li>
         </ul>
     </div>
-
-
-  </div>  
+  <div>
+    <img src="img/tavasz.jpg" alt="tavasz">
+    <p>Tavasz</p>
+  </div> 
+   <div>
+    <img src="img/nyar.jpg" alt="nyár">
+    <p>Nyár</p>
+</div>
+    <div>
+        <img src="img/osz.jpg" alt="ősz">
+    <p>Ősz</p>
+    </div>
+    <div>
+        <img src="img/tel.jpg" alt="tél">
+        <p>Tél</p>
+    </div>
 </body>
 
 </html>
