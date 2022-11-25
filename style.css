@@ -38,3 +38,12 @@ body{
 
   }
 
+ footer {
+    position: block;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    color: maroon;
+    text-align: center;
+    background-color: green;
+    }
