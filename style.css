@@ -43,7 +43,9 @@ body{
     width: 100%;
     left: 0;
     bottom: 0;
-    color: maroon;
+    color: white;
+    font-weight: bolder;
     text-align: center;
-    background-color: green;
+    background-color: blue;
+    font-size: larger;
     }
