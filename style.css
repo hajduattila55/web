@@ -39,7 +39,7 @@ body{
   }
 
  .footer {
-    position: block;
+    position: fixed;
     width: 100%;
     left: 0;
     bottom: 0;
@@ -48,4 +48,9 @@ body{
     text-align: center;
     background-color: blue;
     font-size: larger;
+    }
+  
+    .footer>a {
+      text-decoration: none;
+      color: whitesmoke;
     }
