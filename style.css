@@ -31,7 +31,7 @@ h2 {
 }
 
 img {
-  width: 100vw;
+  width: 18vw;
   height: auto;
 }
 
@@ -101,5 +101,9 @@ font-size: large;
   /* For mobile phones: */
   .menu, .main, .right {
     width: 100%;
+  }
+  img {
+    width: 100vw;
+    height: auto;
   }
 }
