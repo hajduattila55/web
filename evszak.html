@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,16 +8,16 @@
     <link rel="stylesheet" href="style.css">
     <title>Évszakok</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <title>HA OLDALA</title>
-        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-        <link rel="manifest" href="favicon/site.webmanifest">
-        <meta name="msapplication-TileColor" content="#da532c">
-        <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="style.css">
+    <title>HA OLDALA</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <style>
-        div.evszak{
+        div.evszak {
             margin: 1%;
             float: left;
             transition: .8s;
@@ -24,50 +25,56 @@
             font-weight: bolder;
             text-align: center;
         }
-        img{
+
+        img {
             border: 3px solid black;
             width: 250px;
         }
- div.evszak:hover {
-    transform: scale(1.1);
- }
- </style>
+
+        div.evszak:hover {
+            transform: scale(1.1);
+        }
+    </style>
 </head>
 
 <body>
-     <div class="nav">
-        <ul>
-            <li><a href="index.html">FŐOLDAL</a></li>
-            <li><a href="keplink.html">KÉPLINK</a></li>
-            <li><a href="lista.html">LISTA</a></li>
-            <li><a href="tablaz.html">ÓRAREND</a></li>
-            <li><a href="urlap.html">ŰRLAP</a></li>
-            <li><a class="active" href="evszak.html">ÉVSZAKOK</a></li>
-        </ul>
-    </div>
-  <div class="evszak">
-    <img src="img/tavasz.jpg" alt="tavasz">
-    <p>Tavasz</p>
-  </div> 
-   <div class="evszak">
-    <img src="img/nyar.jpg" alt="nyár">
-    <p>Nyár</p>
-</div>
-    <div class="evszak">
-        <img src="img/osz.jpg" alt="ősz">
-    <p>Ősz</p>
-    </div>
-    <div class="evszak">
-        <img src="img/tel.jpg" alt="tél">
-        <p>Tél</p>
-    </div>
+    <div style="overflow: auto;">
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">FŐOLDAL</a></li>
+                <li><a href="keplink.html">KÉPLINK</a></li>
+                <li><a href="lista.html">LISTA</a></li>
+                <li><a href="tablaz.html">ÓRAREND</a></li>
+                <li><a href="urlap.html">ŰRLAP</a></li>
+                <li><a class="active" href="evszak.html">ÉVSZAKOK</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="evszak">
+                <img src="img/tavasz.jpg" alt="tavasz">
+                <p>Tavasz</p>
+            </div>
+            <div class="evszak">
+                <img src="img/nyar.jpg" alt="nyár">
+                <p>Nyár</p>
+            </div>
+            <div class="evszak">
+                <img src="img/osz.jpg" alt="ősz">
+                <p>Ősz</p>
+            </div>
+            <div class="evszak">
+                <img src="img/tel.jpg" alt="tél">
+                <p>Tél</p>
+            </div>
+        </div>
 
-    <div class="footer">
-        <footer>
-            <p>Szerző: Hajdu Attila <br>
-            <a id="email" href="mailto:hajdua@kkszki.hu">hajdua@kkszki.hu</a>
-        </p>
-        </footer>
+        <div class="footer">
+            <footer>
+                <p>Szerző: Hajdu Attila <br>
+                    <a id="email" href="mailto:hajdua@kkszki.hu">hajdua@kkszki.hu</a>
+                </p>
+            </footer>
+        </div>
     </div>
 </body>
 
