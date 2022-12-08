@@ -22,78 +22,84 @@ div.nav li a:hover:not(.active) {
     background-color: #111;
   }
   
-  h1 {
-    color: rgb(122, 6, 6);
-  }
-  
-  h2 {
-    color: aqua;
-  }
+h1 {
+  color: rgb(122, 6, 6);
+}
+
+h2 {
+  color: aqua;
+}
+
+img {
+  width: 100vw;
+  height: auto;
+}
+
 body{
     background-color: darkviolet;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: aliceblue;
 }
 
-  .active {
-    background-color: #04AA6D;
+.active {
+background-color: #04AA6D;
 
-  }
+}
 
- .footer {
-    position: fixed;
+.footer {
+position: fixed;
+width: 100%;
+left: 0;
+bottom: 0;
+color: white;
+font-weight: bolder;
+text-align: center;
+background-color: blue;
+font-size: large;
+}
+
+#email {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.menu {
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+
+.menu a {
+  background-color: #e5e5e5;
+  padding: 8px;
+  margin-top: 7px;
+  display: block;
+  width: 100%;
+  color: black;
+}
+
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+}
+
+.right {
+  background-color: #e5e5e5;
+  float: left;
+  width: 20%;
+  padding: 15px;
+  margin-top: 7px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
     width: 100%;
-    left: 0;
-    bottom: 0;
-    color: white;
-    font-weight: bolder;
-    text-align: center;
-    background-color: blue;
-    font-size: large;
-    }
-  
-  #email {
-      text-decoration: none;
-      color: whitesmoke;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-    
-    .menu {
-      float: left;
-      width: 20%;
-      text-align: center;
-    }
-    
-    .menu a {
-      background-color: #e5e5e5;
-      padding: 8px;
-      margin-top: 7px;
-      display: block;
-      width: 100%;
-      color: black;
-    }
-    
-    .main {
-      float: left;
-      width: 60%;
-      padding: 0 20px;
-    }
-    
-    .right {
-      background-color: #e5e5e5;
-      float: left;
-      width: 20%;
-      padding: 15px;
-      margin-top: 7px;
-      text-align: center;
-    }
-    
-    @media only screen and (max-width: 620px) {
-      /* For mobile phones: */
-      .menu, .main, .right {
-        width: 100%;
-      }
-    }
+  }
+}
