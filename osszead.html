@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Összead</title>
+</head>
+<body>
+    
+<h1>összeadó progi</h1>
+
+
+<form action=" javascript: oa()">
+<fieldset>
+    <legend> </legend>
+    <input type="number" name="a" placeholder="szám1"> +
+    <input type="number" name="b " placeholder="szám2"> =
+    <input type="text" id="c" placeholder="eredmény">
+    <input type="submit" value="SUBMIT">
+    <input type="submit" value="RESET">
+    <input type="color" name="szin" id="szin" value="#12D9D6">
+</fieldset>
+</form>
+
+<script>
+function oa() {
+
+    c.value = Number ( a.value) + Number ( b.value) ;
+    document.body.style.backgroundColor = szin.value ;
+
+ }
+
+
+</script>
+
+
+
+
+</body>
+</html>
