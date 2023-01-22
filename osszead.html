@@ -1,41 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Összead</title>
+    <title>Számológép</title>
 </head>
 <body>
-    
-<h1>összeadó progi</h1>
+    <div style="overflow: auto;">
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">FŐOLDAL</a></li>
+                <li><a href="keplink.html">KÉPLINK</a></li>
+                <li><a href="lista.html">LISTA</a></li>
+                <li><a href="tablaz.html">ÓRAREND</a></li>
+                <li><a href="osszead.html">Számológép/a></li>
+                <li><a href="evszak.html">ÉVSZAKOK</a></li>
+            </ul>
+        </div>
+    <h1>Számológép </h1>
+
+<form action="javascript:sz()">
 
 
-<form action=" javascript: oa()">
 <fieldset>
-    <legend> </legend>
-    <input type="number" name="a" placeholder="szám1"> +
-    <input type="number" name="b " placeholder="szám2"> =
-    <input type="text" id="c" placeholder="eredmény">
-    <input type="submit" value="SUBMIT">
-    <input type="submit" value="RESET">
-    <input type="color" name="szin" id="szin" value="#12D9D6">
-</fieldset>
+
+<legend>összeadó</legend>
+<input type="number" name="a" id="a" placeholder="szám1">
+<input type="number" name="b" id="b" placeholder="szám2">
+<input type="number" name="c" id="c" placeholder="eredmény"><br><br>
+<input type="color" name="szin" id="szin" value="#092FEC">
+<input type="submit" value="SUBMIT">
+<input type="reset" value="RESET">
 </form>
+</fieldset>
 
 <script>
-function oa() {
-
-    c.value = Number ( a.value) + Number ( b.value) ;
-    document.body.style.backgroundColor = szin.value ;
-
- }
-
-
+    function sz() {
+        c.value = Number(a.value) + Number(b.value) ;
+        document.body.style.backgroundColor = szin.value ;
+    }
 </script>
 
+<form action="javascript:ki()">
 
 
+    <fieldset>
+    
+    <legend>kivonó</legend>
+    <input type="number" name="d" id="d" placeholder="szám1">
+    <input type="number" name="e" id="e" placeholder="szám2">
+    <input type="number" name="f" id="f" placeholder="eredmény"><br><br>
+    <input type="color" name="szin" id="szin2" value="#1EFF00">
+    <input type="submit" value="SUBMIT">
+    <input type="reset" value="RESET">
+    </form>
+    </fieldset>
+    
+    <script>
+        function ki() {
+            f.value = Number(d.value) - Number(e.value) ;
+            document.body.style.backgroundColor = szin2.value ;
+        }
+    </script>
 
-</body>
-</html>
+<form action="javascript:szor()">
+
+
+    <fieldset>
+    
+    <legend>szorzó</legend>
+    <input type="number" name="g" id="g" placeholder="szám1">
+    <input type="number" name="h" id="h" placeholder="szám2">
+    <input type="number" name="j" id="j" placeholder="eredmény"><br><br>
+    <input type="color" name="szin" id="szin3" value="#FBFF00">
+    <input type="submit" value="SUBMIT">
+    <input type="reset" value="RESET">
+    </form>
+    </fieldset>
+    
+    <script>
+        function szor() {
+            j.value = Number(g.value) * Number(h.value) ;
+            document.body.style.backgroundColor = szin3.value ;
+        }
+    </script>
+
+<form action="javascript:oszt()">
+
+
+    <fieldset>
+        <legend>osztó</legend>
+        <input type="number" name="k" id="k" placeholder="szám1">
+        <input type="number" name="l" id="l" placeholder="szám2">
+        <input type="number" name="m" id="m" placeholder="eredmény"><br><br>
+        <input type="color" name="szin" id="szin4" value="#FF0000">
+        <input type="submit" value="SUBMIT">
+        <input type="reset" value="RESET">
+        </form>
+        </fieldset>
+        
+        <script>
+            function oszt() {
+                m.value = Number(k.value) / Number(l.value) ;
+                document.body.style.backgroundColor = szin4.value ;
+            }
+        </script>
+    </body>
+    </html>
