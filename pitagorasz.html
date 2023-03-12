@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+    
+    <title>Pitagorasz</title>
+</head>
+<body>
+    <div style="overflow: auto;">
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">FŐOLDAL</a></li>
+                <li><a href="keplink.html">KÉPLINK</a></li>
+                <li><a href="lista.html">LISTA</a></li>
+                <li><a href="tablaz.html">ÓRAREND</a></li>
+                <li><a href="urlap.html">ŰRLAP</a></li>
+                <li><a href="osszead.html">Számológép</a></li>
+                <li><a href="evszak.html">ÉVSZAKOK</a></li>
+                <li><a class="active" href="pitagorasz.html">Pitagorasz</a></li>
+            </ul>
+        </div>
+
+
+
+
+
+
+
+
+
+    <h1>Pitagorasz Számológép </h1>
+    <img src="800px-Pythagorean.svg.png" alt="">
+    <h2>Hogyan használjuk ?</h2>
+    <ol>
+      <li>írjuk be az a és b oldalt </li>
+      <li>nyomjunk rá a SZÁMOLJ gombra</li>
+      <li>és meg is kaptuk az eredményt </li>
+    </ol>
+
+  
+  <form action="javascript:pita()">
+  
+  
+  <fieldset>
+  
+  <legend>Pitagorasz</legend>
+  <input type="number" name="a" id="a" placeholder="a oldal">
+  <input type="number" name="b" id="b" placeholder="b oldal">
+  <input type="number" name="c" id="c" placeholder="c oldal"><br><br>
+  <input type="submit" value="SZÁMOLJ">
+  <input type="reset" value="TÖRLÉS">
+  </form>
+  </fieldset>
+
+
+<script>
+    
+  function pita(){
+    a.value = Number(a.value) * Number(a.value) ;
+    b.value = Number(b.value) * Number(b.value) ;
+    c.value = Number(a.value) + Number(b.value) ;
+  }
+  
+  
+    
+</script>
+
+</body>
+</html>
